@@ -1,0 +1,25 @@
+<!-- templates/base.html -->
+{% load static %}
+<html>
+  <head>
+    <title>Django crude</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ǓǏǏ"
+      rel="stylesheet"
+    />
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="nav-left">
+          <h1><a href="{% url 'home' %}">DJANGO STUDENT CRUDE PROJECT</a></h1>
+        </div>
+        <div class="nav-right">
+          <a href="{% url 'post_new' %}">+ ADD NEW </a>
+        </div>
+      </header>
+      {% block content %} {% endblock content %}
+    </div>
+  </body>
+</html>
