@@ -16,7 +16,12 @@ body {
 .enculf{
     text-align: center;
     border-bottom: 1px solid #999;
-    border-left-color: 1px solid rebeccapurple;
+    border-left: 1px solid rebeccapurple;
+    border-right:1px solid rebeccapurple;
+    border-top: 2px solid salmon;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top:4rem;
     
 }
 header h2 {
